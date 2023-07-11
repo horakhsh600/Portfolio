@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/style2.css">
-    <link rel="stylesheet" href="Style/style3.css">
     <link rel="stylesheet" href="Style/style.css">
-    <link rel="stylesheet" href="Style/style-4.css">
-    <title>Protfolio</title>
+    <link rel="Website Icon" href="Icons/portfolio-1.jpg">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- the content of my left container -->
@@ -180,8 +179,15 @@
     </aside>
     <!-- the main container -->
     <main class="container">
+        <header class="header-1">
+            <div class="header-1-img-1" id="page">
+                <a href="index2.html">
+                    <img src="Icons/cv-2.png" alt="">
+                </a>
+            </div>
+        </header>
         <!-- header part of main container -->
-        <header>
+        <header class="header-2">
             <!-- header font -->
             <div class="header-font">
                 <h1 class="header-heading">I'm Horakhsh Sharifi<br><b id="highlight-font">Front-end</b>Developer</h1>
@@ -238,9 +244,9 @@
                 <div class="part-1-6"> 
                     <p id="part-1-contanier-main-top-font">Advertising</p>
                     <p  id="part-1-6-contanier-main-bottom-font">
-                        Lorem ipsum dolor sit amet,<br>
-                        consectetur adipiscing elit. Vitae<br>
-                        nulla diam in ac dictum a urna<br>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Vitae
+                        nulla diam in ac dictum a urna
                         viverra morbi.
                     </p>
                     <p id="par-1-6-bottom-font"><a href="#">ORDER NOW ></a></p>
@@ -471,73 +477,6 @@
                         </span>
                     </div>
                     <hr id="part-4-hr">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     <div class="part-4-main-container-2">
                         <span id="part-4-left-main-font">
                             <p><b>Jounior Web Designer</b></p>
@@ -750,7 +689,7 @@
         </footer>
     </main>
     <!-- the nav of right side -->
-    <nav class="right-side">
+    <nav class="right-side"> 
             <a href="#" id="right-side-icon-img-1"><img src="Icons/Contrast.png" alt=""></a>
         <div class="icon">
             <a href="#" id="right-side-icon-img"><img src="Icons/Home 2.png" alt=""></a>
@@ -786,6 +725,12 @@
               element.textContent = fontNames[index];
             });
           });
+
+          function openPage() {
+            var page = document.getElementById("page");
+            page.classList.toggle("open");
+          }
+          
     </script>
 </body>
 </html>

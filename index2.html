@@ -1,109 +1,459 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Responsive Menu Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: aqua;
-      }
-      
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-      }
-      
-      .menu-icon {
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 25px;
-        z-index: 100;
-      }
-      
-      .bar {
-        background-color: #fff;
-        width: 100%;
-        height: 3px;
-        transition: transform 0.3s, opacity 0.3s;
-      }
-      
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: none;
-      }
-      
-      nav ul li {
-        margin-right: 20px;
-        position: relative;
-      }
-      
-      nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-      
-      nav ul li:hover a {
-        color: #ccc;
-      }
-      
-      .submenu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #333;
-        padding: 10px;
-      }
-      
-      .submenu li {
-        margin-right: 0;
-      }
-      
-      .show {
-        display: block;
-      }
-      
+    .left-side {
+      justify-content: center;
+      padding: 20px 30px 20px 30px;
+      background-color: white;
+      height: 1360px;
+  }
+  #left-side-hr {
+      border: 1px solid #F0F0F6;
+  }
+  .profile > img{
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+  }
+  .profile {
+      justify-content: center;
+      text-align: center;
+  }
+  #profile-name {
+      font-weight: 600;
+  }
+  #profile-content {
+      color: #767676;
+      font-size: small;
+  }
+  .social-media-icons {
+      margin: 0 auto;
+      justify-content: center;
+      text-align: center;
+  }
+  .social-media-icons > a > img{
+      background-color: #FFB400;
+      border-radius: 100%;
+      width: 15px;
+      padding: 5px;
+  }
+  .social-media-icons > a {
+      padding: 5px;
+  }
+  #linkedin-icon{
+      width: 15px;
+  }
+  
+  
+  
+  
+  /* Part Two */
+  #age-left-font {
+      display: grid;
+      grid-template-columns: 33px 1fr;
+      grid-template-rows: 1fr;
+  }
+  #residence-left-font {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      grid-template-rows: 1fr;
+  }
+  #freelancee-left-font {
+      display: grid;
+      grid-template-columns: 83px 1fr;
+      grid-template-rows: 1fr;
+  }
+  #address-left-font {
+      display: grid;
+      grid-template-columns: 63px 1fr;
+      grid-template-rows: 1fr;
+  }
+  #right-font-add {
+      text-align: right;
+      color: #7EB942;
+  }
+  #right-font {
+      text-align: right;
+  }
+  #left-font {
+      background-color: #FFB400;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* prograss-bar */
+  .progress-bar-container-part {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      color: #767676;
+  }
+  #progress-bar-perc-amount-part {
+      text-align: right;
+  }
+  .progress-bar-perc-container-part {
+      border: 1px solid #FFB400;
+      height: 8px;
+      border-radius: 10px;
+  }
+  
+  
+  
+  /* language progress bar */
+  .persian-progress-bar-perc-1-part3 {
+      background-color: #FFB400;
+      width: 99%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  .English-progress-bar-perc-2-part3 {
+      background-color: #FFB400;
+      width: 60%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  .Urdu-progress-bar-perc-3-part3 {
+      background-color: #FFB400;
+      width: 25%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  
+  
+  
+  
+  /* Skills progress bar */
+  .html-progress-bar-per-part-1-4 {
+      background-color: #FFB400;
+      width: 99%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  .css-progress-bar-per-part-2-4 {
+      background-color: #FFB400;
+      width: 60%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  .js-progress-bar-per-part-3-4 {
+      background-color: #FFB400;
+      width: 25%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  .php-progress-bar-per-part-4-4 {
+      background-color: #FFB400;
+      width: 75%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  .wordpress-progress-bar-per-part-5-4 {
+      background-color: #FFB400;
+      width: 60%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  
+  
+  /* Part 3*/
+  .persian-progress-bar-perc {
+      background-color: #FFB400;
+      width: 99%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  .English-progress-bar-perc {
+      background-color: #FFB400;
+      width: 60%;
+      height: 4px;
+      align-items: center;
+      margin-top:2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }
+  .Urdu-progress-bar-perc {
+      background-color: #FFB400;
+      width: 25%;
+      height: 4px;
+      align-items: center;
+      margin-top: 1.2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }  
+  
+  
+  /* Skills */
+  .html-progress-bar-per {
+      background-color: #FFB400;
+      width: 90%;
+      height: 4px;
+      align-items: center;
+      margin-top: 1.2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }  
+  .css-progress-bar-per {
+      background-color: #FFB400;
+      width: 85%;
+      height: 4px;
+      align-items: center;
+      margin-top: 1.2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }  
+  .js-progress-bar-per {
+      background-color: #FFB400;
+      width: 80%;
+      height: 4px;
+      align-items: center;
+      margin-top: 1.2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }  
+  .php-progress-bar-per{
+      background-color: #FFB400;
+      width: 75%;
+      height: 4px;
+      align-items: center;
+      margin-top: 1.2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }  
+  .wordpress-progress-bar-per {
+      background-color: #FFB400;
+      width: 85%;
+      height: 4px;
+      align-items: center;
+      margin-top: 1.2px;
+      margin-left: 1px;
+      border-radius: 5px;
+  }  
+  
+  
+  
+  .part-5-left-side-list {
+      list-style: url(../Icons/Icons.png);
+  }
+  #left-side-bottom-btn {
+      background-color: #FFB400;
+      border: none;
+      padding: 13px 40px;
+      margin: auto;
+      display: block;
+      margin-top: 20px;
+      font-size: medium;
+      font-weight: bold;
+  }
+  #left-side-bottom-btn > img {
+      position: relative;
+      margin-left: 7px;
+  }
   </style>
 </head>
 <body>
-  <header>
-    <div class="menu-icon" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+  <aside class="left-side">
+    <!-- the left side content, part 1 -->
+    <div class="part-1-left-side">
+        <!-- the profile part of left side content, part 1 -->
+        <div class="profile">
+            <img src="Images/myprofile.png" alt="">
+            <p id="profile-name">
+                Horakhsh Sharifi
+            </p>
+            <p id="profile-content">
+                Front-End Developer
+            </p>
+        </div>
+        <!-- the Social Media Icons part of left side content, part 1 -->
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/profile.php?id=100013399456943&mibextid=ZbWKwL"><img src="Icons/Icons-facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/horakhsh_sh/"><img src="Icons/Icons-instagram.png" alt=""></a>
+            <a href="https://twitter.com/SharifiHor52408"><img src="Icons/Icons-twitter.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/horakhsh-sharifi-64a815212"><img src="Icons/Icons-linkedin.png" alt="" id="linkedin-icon"></a>
+            <a href="https://www.youtube.com/@heartofasia469"><img src="Icons/Icons-Youtube.png" alt=""></a>
+            <a href="https://dribbble.com/horakhsh_204"><img src="Icons/Icons-dribbble.png" alt=""></a>
+        </div>
     </div>
-    <nav id="menu" class="hide">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li class="submenu-item">
-          <a href="#">Services</a>
-          <ul class="submenu">
-            <li><a href="#">Service 1</a></li>
-            <li><a href="#">Service 2</a></li>
-            <li><a href="#">Service 3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <script>
-    function toggleMenu() {
-        var menu = document.getElementById("menu");
-        menu.classList.toggle("show");
-      }
-  </script>
+    <hr id="left-side-hr">
+    <!-- the left side content, part 2 -->
+    <div class="part-2-left-side">
+        <!-- the left side content, part 1 -->
+            <span id="age-left-font">
+                <p id="left-font">Age:</p>
+                <p id="right-font">15</p>
+            </span>
+            <!-- the Residence detial part of left side content, part 1 -->
+            <span id="residence-left-font">
+                <p id="left-font">Residence:</p>
+                <p id="right-font">DB</p>
+            </span>
+            <!-- the Freelance detial part of left side content, part 1 -->
+            <span id="freelancee-left-font">
+                <p id="left-font">Freelancee:</p>
+                <p id="right-font-add">Available</p>
+            </span>
+            <!-- the Address detial part of left side content, part 1 -->
+            <span id="address-left-font">
+                <p id="left-font">Address:</p>
+                <p id="right-font">Islamabad,Pakistan</p>
+            </span>
+    </div>
+    <hr id="left-side-hr">
+    <!-- the left side content, part 3 -->
+    <div class="part-3-left-side">
+        <!-- the title of left side, part 3 -->
+        <h1>Languages</h1>
+        <!-- the left side progress-bar 1, part 3 -->
+        <span class="progress-bar-container-part">
+            <!-- the title of progress bar 1, part 3 -->
+            <p>Persian</p>
+            <!-- the amount of progress bar 1, part 3 -->
+            <p id="progress-bar-perc-amount-part">100%</p>
+        </span>
+        <!-- the % amount of progress bar 1, part3 -->
+        <div class="progress-bar-perc-container-part">
+            <div class="persian-progress-bar-perc-1-part3"></div>
+        </div>
+
+        <!-- the left side progress-bar 2, part 3 -->
+        <span class="progress-bar-container-part">
+            <!-- the title of progress bar 2, part 3 -->
+            <p>English</p>
+            <!-- the amount of progress bar 2, part 3 -->
+            <p id="progress-bar-perc-amount-part">60%</p>
+        </span>
+        <!-- the % amount of progress bar 2, part3 -->
+        <div class="progress-bar-perc-container-part">
+            <div class="English-progress-bar-perc-2-part3"></div>
+        </div>
+
+        <!-- the left side progress-bar 3, part 3 -->
+        <span class="progress-bar-container-part">
+            <!-- the title of progress bar 3, part 3 -->
+            <p>Urdu</p>
+            <!-- the amount of progress bar 3, part 3 -->
+            <p id="progress-bar-perc-amount-part">25%</p>
+        </span>
+        <!-- the % amount of progress bar 3, part 3 -->
+        <div class="progress-bar-perc-container-part">
+            <div class="Urdu-progress-bar-perc-3-part3"></div>
+        </div>
+    </div>
+    <hr id="left-side-hr">
+    <!-- the left side content, part 4 -->
+    <div class="part-4-left-side">
+        <!-- the title of left side, part 3 -->
+        <h1>Skills</h1>
+        <!-- the left side progress-bar 1, part 4 -->
+        <span class="progress-bar-container-part">
+            <!-- the title of progress bar 1, part 4 -->
+            <p>Html</p>
+            <!-- the amount of progress bar 1, part 4 -->
+            <p id="progress-bar-perc-amount-part">90%</p>
+        </span>
+        <!-- the % amount of progress bar 1, part 4 -->
+        <div class="progress-bar-perc-container-part">
+            <div class="html-progress-bar-per-part-1-4"></div>
+        </div>
+
+        <!-- the left side progress-bar 2, part 4 -->
+        <span class="progress-bar-container-part">
+            <!-- the title of progress bar 2, part 4 -->
+            <p>Css</p>
+            <!-- the amount of progress bar 2, part 4 -->
+            <p id="progress-bar-perc-amount-part">85%</p>
+        </span>
+        <!-- the % amount of progress bar 2, part 4 -->
+        <div class="progress-bar-perc-container-part">
+            <div class="css-progress-bar-per-part-2-4"></div>
+        </div>
+
+        <!-- the left side progress-bar 3, part 4 -->
+        <span class="progress-bar-container-part">
+            <!-- the title of progress bar 3, part 4 -->
+            <p>Js</p>
+            <!-- the title of progress bar 3, part 4 -->
+            <p id="progress-bar-perc-amount-part">80%</p>
+        </span>
+        <!-- the % amount of progress bar 3, part 4 -->
+        <div class="progress-bar-perc-container-part">
+            <div class="js-progress-bar-per-part-3-4"></div>
+        </div>
+
+        <!-- the left side progress-bar 4, part 4 -->
+        <span class="progress-bar-container-part">
+            <!-- the title of progress bar 4, part 4 -->
+            <p>PHP</p>
+            <!-- the title of progress bar 4, part 4 -->
+            <p id="progress-bar-perc-amount-part">75%</p>
+        </span>
+        <!-- the % amount of progress bar 4, part 4 -->
+        <div class="progress-bar-perc-container-part">
+            <div class="php-progress-bar-per-part-4-4"></div>
+        </div>
+        
+        <!-- the % amount of progress bar 3, part 4 -->
+        <span class="progress-bar-container-part ">
+            <!-- the title of progress bar 1, part 4 -->
+            <p>WordPress</p>
+            <!-- the title of progress bar 4, part 4 -->
+            <p id="progress-bar-perc-amount-part">85%</p>
+        </span>
+        <!-- the % amount of progress bar 4, part 4 -->
+        <div class="progress-bar-perc-container-part">
+            <div class="wordpress-progress-bar-per-part-5-4"></div>
+        </div>
+    </div>
+    <hr id="left-side-hr">
+    <!-- the left side content, part 5 -->
+    <div class="part-5-left-side">
+        <h1>Extra Skills</h1>
+        <ul class="part-5-left-side-list">
+            <li>Bootstrap, Materialize</li>
+            <li>Stylus, Sass, Less</li>
+            <li>Gulp, Webpack, Grunt</li>
+            <li>GIT Knowledge</li>
+        </ul>
+    </div>
+    <hr id="left-side-hr">
+    <button id="left-side-bottom-btn">DOWNLOAD CV <img src="Icons/Frame.png" alt=""></button>
+</aside>
 </body>
 </html>
