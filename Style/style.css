@@ -374,7 +374,6 @@
         margin-left: 15px;
     }
     #part-4-header-font {
-    
         text-align: center;
     }
     #part-4-hr {
@@ -1273,9 +1272,6 @@
         .main-center {
             padding: 0 10px;
         }
-        .header-1 {
-            padding: 0 10px;
-        }
         #highlight-font {
             color: #FFB400;
             padding-right: 5px;
@@ -1285,19 +1281,20 @@
         
         .header-2 {
             background-image: url(background.png);
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
             background-color: white;
             max-width: 780px;
-            width: 100%;
+            width: 95.9%;
             margin-top: 10px;
-            max-height: 350px;
-            height: 100%;
-            padding-bottom: 20px;
+            text-align: center;
+            margin: 10px 10px 10px 10px;
         }
         .header-heading{
-            font-size: 100%;
+            font-size: 25px;
             font-weight: 700;
             max-width: 780px;
             width: 100%;
@@ -1318,16 +1315,21 @@
         .header-btn > img {
             padding-left: 7px;
         }
-        #main-profile-img > img {
-            padding: 0 !important;
+        .main-profile-img > img {
             max-width: 780px;
-            width: 100%;
+            width: 200px;
+        }
+        .main-profile-img {
+            grid-row: 1;
+            grid-column: 1;
+            margin-bottom: -30px;
         }
         .header-font {
-            padding-left: 10px;
-            font-size: 80%;
+            font-size: 100%;
             max-width: 780px;
             width: 100%;
+            grid-row: 2;
+            grid-column: 1;
         }
 
 
@@ -1455,7 +1457,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 20px;
-        
     }
     #part-2-2-font {
         background-color: #FFB400;
@@ -1497,22 +1498,28 @@
         padding-top: 28px;
         padding-bottom: 30px;
         border-radius: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .part-2-2 {
         background-color: white;
         padding-bottom: 30px;
         border-radius: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
-    .part-2-2-font {
+    #part-2-2-font {
         background-color: #FFB400;
         padding: 5px;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
     }
     .part-2-3 {
         background-color: white;
         padding-top: 28px;
         padding-bottom: 30px;
         border-radius: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .priceplans-1-btn-container {
         justify-content: center;
@@ -1599,7 +1606,7 @@
     }
     .part-3-1 {
         background-color: white;
-        padding: 20px 10px;
+        padding: 10px;
         text-align: center;
         border-radius: 10px;
     }
@@ -1616,7 +1623,9 @@
         border-radius: 10px;
     }
     #part-3-profile {
-        display: flex;
+        display: grid;
+        grid-template-columns: 120px 130px;
+        grid-template-rows: 1fr;
         justify-content: center;
     }
     #part-3-profile > img {
@@ -1753,14 +1762,17 @@
     .part-6-1-main > img {
         max-width: 780px;
         width: 100%;
+        border-radius: 10px 10px 0 0;
     }
     .part-6-2-main > img {
         max-width: 780px;
         width: 100%;
+        border-radius: 10px 10px 0 0;
     }
     .part-6-3-main > img {
         max-width: 780px;
         width: 100%;
+        border-radius: 10px 10px 0 0;
     }
     .part-6-1-main {
         background-color: white;
@@ -1927,7 +1939,7 @@
     }
     
     .footer-part-1 > img { 
-        max-width: 1920px;
+        max-width: 780px;
         width: 100%;
     }
     #footer-part-3 {
