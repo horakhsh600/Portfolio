@@ -10,7 +10,7 @@
 </head>
 <body>
 <!-- the content of my left container -->
-    <aside class="left-side">
+    <aside class="left-side" id="left-side-main">
         <!-- the left side content, part 1 -->
         <div class="part-1-left-side">
             <!-- the profile part of left side content, part 1 -->
@@ -191,12 +191,15 @@
                     <img src="Icons/menu.png" alt="">
                 </label>
                 <ul class="header-1-ul">
+                    <label for="check" class="checkbtn">
+                        <img src="Icons/close-2.png" alt="">
+                    </label>
                   <li class="header-1-li"><a href="#">Home</a></li>
-                  <li class="header-1-li"><a href="#">Services</a></li>
+                  <li class="header-1-li"><a href="#part-1-main">Services</a></li>
                   <li class="header-1-li"><a href="#">CV</a></li>
                   <li class="header-1-li"><a href="#">Portfolio</a></li>
-                  <li class="header-1-li"><a href="#">Blog</a></li>
-                  <li class="header-1-li"><a href="#">Contact</a></li>
+                  <li class="header-1-li"><a href="#part-7-main">Blog</a></li>
+                  <li class="header-1-li"><a href="#part-8-main">Contact</a></li>
                 </ul>
               </nav>
         </header>
@@ -206,8 +209,8 @@
             <div class="header-font">
                 <h1 class="header-heading">I'm Horakhsh Sharifi<br><b id="highlight-font">Front-end</b>Developer</h1>
                 <p class="header-2-par">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing<br>
-                    elit. Et, volutpat feugiat placerat lobortis. Natoque<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Et, volutpat feugiat placerat lobortis. Natoque
                     rutrum semper sed suspendisse nunc lectus.  
                 </p>
                 <!-- the button of header conteant -->
@@ -220,7 +223,7 @@
         </header>
         <!-- my main content of main container -->
         <main class="main-center">
-            <div class="part1-main">
+            <div class="part1-main" id="part-1-main">
                 <span class="part-1-font">
                     <h1>My Services</h1>
                     <p id="part-1-header-par">
@@ -267,7 +270,7 @@
                 </div>
             </div>
             </div>
-            <div class="part2-main">
+            <div class="part2-main" id="part-2-main">
                 <span id="part2-main-header-font">
                     <h1>Price Plans</h1>
                     <p id="part-2-header-par"> 
@@ -349,7 +352,7 @@
                         </div>
                     </div>
             </div>
-            <div class="part3-main">
+            <div class="part3-main" id="part-3-main">
                 <span id="part-3-heder-font">
                     <h1>Recommendations</h1>
                     <p id="part-3-header-par">
@@ -406,7 +409,7 @@
             <div class="main-dot">
                 <img src="Group 39.png" alt="" id="main-dot-img">
             </div>
-            <div class="part4-main">
+            <div class="part4-main" id="part-4-main">
                 <span id="part-4-header-font">
                     <h1>Education</h1>
                     <p id="part-4-header-par">
@@ -465,7 +468,7 @@
                         </div>
                 </div>
             </div>
-            <div class="part5-main">
+            <div class="part5-main" id="part-5-main">
                 <span id="part-4-header-font">
                     <h1>Work History</h1>
                     <p id="part-4-header-par">
@@ -524,7 +527,7 @@
                         </div>
                 </div>
             </div>
-            <div class="part6-main">
+            <div class="part6-main" id="part-6-main">
                 <span id="part-6-header-font">
                     <h1>Protfolio</h1>
                     <p id="part-6-header-par">
@@ -554,7 +557,7 @@
                     <img src="Images/Image (8).png" alt="">
                 </div>
             </div>
-            <div class="part7-main">
+            <div class="part7-main" id="part-7-main">
                 <span id="part-6-1-header-font">
                     <h1>Blog</h1>
                     <p id="part-4-header-par">
@@ -605,7 +608,7 @@
                 </div>
             </div>
             <div class="part8-part9">
-                <div class="part8-main">
+                <div class="part8-main" id="part-8-main">
                     <h1>Leave Us Your Info</h1>
                     <div class="part-8-main-content">
                         <form action="https://formsubmit.co/f0ec69f8b18ad60f48677974bd281922" method="POST">
@@ -616,13 +619,13 @@
                                 <p id="part-8-main-inout-font">Subject</p>
                                 <input type="text" name="Subject" id="part-9-input-3">
                                 <p id="part-8-main-inout-font">Your Message</p>
-                                <textarea id="message" name="Comment, Question" rows="4"></textarea>
+                                <textarea id="message" name="Comment, Question" rows="8"></textarea>
                             <br>
                                 <button type="submit" id="part-8-btn"><b>SEND MESSAGE</b></button>
                         </form>
                     </div>
                 </div>
-                <div class="part9-main">
+                <div class="part9-main" id="part-9-main">
                     <h1>Contact Infotmation</h1>
                     <div class="part-9-main-container-1">
                         <span id="part-9-icons-1">
@@ -642,7 +645,7 @@
                         </ul>
                     </div>
                     <div class="part-9-main-container-1">
-                        <span id="part-9-icons-1">
+                        <span id="part-9-icons-2">
                             <img src="Icons/mail.png" alt="" id="part-9-main-icon">
                         </span>
                         <ul class="part-9-main-ul-1">
@@ -659,7 +662,7 @@
                         </ul>
                     </div>
                     <div class="part-9-main-container-1">
-                        <span id="part-9-icons-1">
+                        <span id="part-9-icons-3">
                             <img src="Icons/Mobile.png" alt="" id="part-9-main-icon">
                         </span>
                         <ul class="part-9-main-ul-1">
@@ -702,23 +705,23 @@
             <span class="font-name">Home</span>
         </div>
         <div class="icon">
-            <a href="#" id="right-side-icon-img"><img src="Icons/Blog2 (5).png" alt=""></a>
+            <a href="#part-1-main" id="right-side-icon-img"><img src="Icons/Blog2 (5).png" alt=""></a>
             <span class="font-name">Services</span>
         </div>
         <div class="icon">
-            <a href="#" id="right-side-icon-img"><img src="Icons/Blog2 (3).png" alt=""></a>
+            <a href="#left-side-main" id="right-side-icon-img"><img src="Icons/Blog2 (3).png" alt=""></a>
             <span class="font-name">CV</span>
         </div>
         <div class="icon">
             <a href="#" id="right-side-icon-img"><img src="Icons/Blog2 (4).png" alt=""></a>
-            <span class="font-name">Protfolio</span>
+            <span class="font-name">Portfolio</span>
         </div>
         <div class="icon">
-            <a href="#" id="right-side-icon-img"><img src="Icons/Blog2 (1).png" alt=""></a>
+            <a href="#part-7-main" id="right-side-icon-img"><img src="Icons/Blog2 (1).png" alt=""></a>
             <span class="font-name">Blog</span>
         </div>
         <div class="icon">
-            <a href="#" id="right-side-icon-img"><img src="Icons/Blog2 (2).png" alt=""></a>
+            <a href="#part-8-main" id="right-side-icon-img"><img src="Icons/Blog2 (2).png" alt=""></a>
             <span class="font-name">Contact</span>
         </div>
     </nav>

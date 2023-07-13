@@ -1,4 +1,4 @@
-@media all and (min-width: 781px) and (max-width: 1920px) {
+@media all and (min-width: 781px) and (max-width: 4000px) {
     * {
         font-family: 'Orbitron', sans-serif;
         font-family: 'Source Sans 3', sans-serif;
@@ -17,6 +17,10 @@
     }
     .container {
         padding: 0 15px;
+    }
+    .header-2-par {
+        font-size: 100%;
+        width: 500px;
     }
     header {
         background-image: url(background.png);
@@ -497,6 +501,7 @@
     .part-9-main-container-1 {
         background-color: white;
         margin-bottom: 20px;
+        padding-top: 10px;
     }
     .part-9-main-container-2 {
         background-color: white;
@@ -508,29 +513,32 @@
         height: 210px;
         margin-bottom: 20px;
     }
-    #part-9-icons-1{
-        background-color: #FFB400;
+    #part-9-icons-1 > img {
+        margin: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 45px;
         border-radius: 100%;
-        padding: 15px 12px 10px 12px;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 160px;
     }
-    .part-9-main-container-1 > img {
-        padding: 10px;
+    #part-9-icons-2 > img {
         margin: auto;
+        display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 50px;
+        width: 40px;
+        border-radius: 100%;
     }
-    #part-9-main-icon {
+    #part-9-icons-3 > img {
+        margin: auto;
+        display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 40px;
+        width: 40px;
+        border-radius: 100%;
     }
     .part-9-main-ul-1 {
         list-style: none;
@@ -560,6 +568,7 @@
         padding-right: 5px;
         border-radius: 3px;
         font-size: large;
+        max-width: 500px;
     }
     #part-9-input-1:focus {
         outline: none;
@@ -575,6 +584,7 @@
         padding-right: 5px;
         border-radius: 3px;
         font-size: large;
+        max-width: 500px;
     }
     #part-9-input-2:focus {
         outline: none;
@@ -582,6 +592,7 @@
     #part-9-input-3 {
         border: none;
         background-color: #F0F0F6;
+        max-width: 500px;
         width: 100%;
         padding-top: 16.835px;
         padding-bottom: 16.835px;
@@ -615,6 +626,20 @@
         border: none;
         background-color: #FFB400;
         cursor: pointer;
+        border-radius: 3px;
+    }
+    textarea {
+        max-width: 500px;
+        width: 100%;
+        border: none;
+        background-color: #F0F0F6;
+        border-radius: 3px;
+        font-size: large;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    textarea:focus {
+        outline: none;
     }
     .footer-part-1 > img { 
         max-width: 1920px;
@@ -1238,7 +1263,7 @@
           max-width: 780px;
           width: 100%;
           background: #FFB400;
-          top: 28px;
+          top: -16px;
           left: -110%;
           padding-left: 0;
           text-align: center;
@@ -1828,32 +1853,39 @@
         margin-bottom: 20px;
         border-radius: 10px;
     }
-    #part-9-icons-1{
-        background-color: #FFB400;
+    #part-9-icons-1 > img {
+        margin: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 45px;
         border-radius: 100%;
-        padding: 15px 12px 10px 12px;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 225px;
-        
     }
-    .part-9-main-container-1 > img {
-        padding: 10px;
+    #part-9-icons-2 > img {
         margin: auto;
+        display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 50px;
-        
+        width: 40px;
+        border-radius: 100%;
+    }
+    #part-9-icons-3 > img {
+        margin: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 40px;
+        border-radius: 100%;
     }
     #part-9-main-icon {
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-top: 40px;
-        
+        padding-top: 10px;
     }
     .part-9-main-ul-1 {
         list-style: none;
@@ -1938,7 +1970,19 @@
         border: none;
         background-color: #FFB400;
     }
-    
+    textarea {
+        max-width: 780px;
+        width: 100%;
+        border: none;
+        background-color: #F0F0F6;
+        border-radius: 3px;
+        font-size: large;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    textarea:focus {
+        outline: none;
+    }
     .footer-part-1 > img { 
         max-width: 780px;
         width: 100%;
